@@ -6,6 +6,9 @@ def get_book_text(book):
 def main():
     book = "./books/frankenstein.txt"
     book_text = get_book_text(book)
-    print(book_text)
+    words = book_text.split()
+    num_words = len(words)
+    print(f"{num_words} words found in the document")
+
 
 main()
